@@ -14,6 +14,10 @@
 		86E7F93C2AC2BEFE0024AD6F /* ArticlesWithAlgoliaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7F93B2AC2BEFE0024AD6F /* ArticlesWithAlgoliaTests.swift */; };
 		86E7F9462AC2BEFE0024AD6F /* ArticlesWithAlgoliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7F9452AC2BEFE0024AD6F /* ArticlesWithAlgoliaUITests.swift */; };
 		86E7F9482AC2BEFE0024AD6F /* ArticlesWithAlgoliaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7F9472AC2BEFE0024AD6F /* ArticlesWithAlgoliaUITestsLaunchTests.swift */; };
+		86E7F9562AC2C2330024AD6F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 86E7F9552AC2C2330024AD6F /* GoogleSignIn */; };
+		86E7F9582AC2C2330024AD6F /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86E7F9572AC2C2330024AD6F /* GoogleSignInSwift */; };
+		86E7F95D2AC2F1030024AD6F /* UserAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7F95C2AC2F1030024AD6F /* UserAuthModel.swift */; };
+		86E7F95F2AC2F6270024AD6F /* ToolbarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7F95E2AC2F6270024AD6F /* ToolbarMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,9 @@
 		86E7F9412AC2BEFE0024AD6F /* ArticlesWithAlgoliaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArticlesWithAlgoliaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E7F9452AC2BEFE0024AD6F /* ArticlesWithAlgoliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesWithAlgoliaUITests.swift; sourceTree = "<group>"; };
 		86E7F9472AC2BEFE0024AD6F /* ArticlesWithAlgoliaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesWithAlgoliaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86E7F95B2AC2ED720024AD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		86E7F95C2AC2F1030024AD6F /* UserAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthModel.swift; sourceTree = "<group>"; };
+		86E7F95E2AC2F6270024AD6F /* ToolbarMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E7F9562AC2C2330024AD6F /* GoogleSignIn in Frameworks */,
+				86E7F9582AC2C2330024AD6F /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +103,9 @@
 		86E7F9292AC2BEFC0024AD6F /* ArticlesWithAlgolia */ = {
 			isa = PBXGroup;
 			children = (
+				86E7F95B2AC2ED720024AD6F /* Info.plist */,
+				86E7F95A2AC2E0170024AD6F /* Views */,
+				86E7F9592AC2E00F0024AD6F /* Models */,
 				86E7F92A2AC2BEFC0024AD6F /* ArticlesWithAlgoliaApp.swift */,
 				86E7F92C2AC2BEFC0024AD6F /* ContentView.swift */,
 				86E7F92E2AC2BEFE0024AD6F /* Assets.xcassets */,
@@ -127,6 +139,22 @@
 			path = ArticlesWithAlgoliaUITests;
 			sourceTree = "<group>";
 		};
+		86E7F9592AC2E00F0024AD6F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86E7F95C2AC2F1030024AD6F /* UserAuthModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86E7F95A2AC2E0170024AD6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86E7F95E2AC2F6270024AD6F /* ToolbarMenuView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +171,10 @@
 			dependencies = (
 			);
 			name = ArticlesWithAlgolia;
+			packageProductDependencies = (
+				86E7F9552AC2C2330024AD6F /* GoogleSignIn */,
+				86E7F9572AC2C2330024AD6F /* GoogleSignInSwift */,
+			);
 			productName = ArticlesWithAlgolia;
 			productReference = 86E7F9272AC2BEFC0024AD6F /* ArticlesWithAlgolia.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 86E7F91E2AC2BEFC0024AD6F;
+			packageReferences = (
+				86E7F9542AC2C2330024AD6F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 86E7F9282AC2BEFC0024AD6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +294,8 @@
 			files = (
 				86E7F92D2AC2BEFC0024AD6F /* ContentView.swift in Sources */,
 				86E7F92B2AC2BEFC0024AD6F /* ArticlesWithAlgoliaApp.swift in Sources */,
+				86E7F95D2AC2F1030024AD6F /* UserAuthModel.swift in Sources */,
+				86E7F95F2AC2F6270024AD6F /* ToolbarMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +456,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ArticlesWithAlgolia/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArticlesWithAlgolia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +485,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ArticlesWithAlgolia/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArticlesWithAlgolia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -577,6 +616,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86E7F9542AC2C2330024AD6F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86E7F9552AC2C2330024AD6F /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86E7F9542AC2C2330024AD6F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		86E7F9572AC2C2330024AD6F /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86E7F9542AC2C2330024AD6F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86E7F91F2AC2BEFC0024AD6F /* Project object */;
 }
